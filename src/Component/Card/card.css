@@ -1,0 +1,61 @@
+.card {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.card__avatar {
+    width: 85px;
+    height: 70px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.card__birth {
+    margin: 0 0 5px 0;
+}
+
+.cart__comment-text {
+    margin: 8px 0 0 0;
+}
+
+.card__comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card__textarea {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    width: 200px;
+    height: 50px;
+    padding: 3px;
+    resize: none
+}
+
+.card__textarea:focus {
+    outline: none;
+}
+
+.card__btn {
+    background: rgba(121, 181, 48, .9);
+    color: #ffffff;
+    border: navajowhite;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.card__btn:focus {
+    outline: none;
+}

@@ -9,7 +9,9 @@ function App() {
 var eventName = isOnIOS ? "pagehide" : "beforeunload";
 
 useEffect(() => {
+    alert(1)
     window.addEventListener(eventName, function (event) { 
+        alert(2)
         if(!isOnIOS){
             event.returnValue = true;
             return
@@ -22,6 +24,8 @@ useEffect(() => {
 
     return (
         <div className="App">
+            {isOnIOS}
+            {eventName}
             <Header/>
             <CardList/>
         </div>
